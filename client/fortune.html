@@ -1,0 +1,87 @@
+<head>
+  <title>Fortune | Carpe-Hora</title>
+  <link rel="shortcut icon" href="/favicon.ico">
+</head>
+
+<body>
+<div class="container">
+
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+      <a class="brand" href="#">Carpe Hora Fortunes</a>
+      <div class="nav">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#top10">Top 10</a>
+      </li>
+      <li>
+        <a href="#top-flop">Top Flop</a>
+      </li>
+      </div>
+      </div>
+    </div>
+  </div>
+  {{> form}}
+  {{> leaderboard}}
+</div>
+</body>
+
+
+<template name="form">
+  <div class="span11 well">
+    <h1 class="big-title">FORTUNES</h1>
+    <div class="span3 toolBox">
+    {{>bigCounter}}
+    </div>
+    <div class="span7 fortune-form">
+      <textarea type="text" id="input-new"></textarea>
+      <br/>
+      <a class="btn btn-add add-fortune">Fait tourner ta fortune</a>
+    </div>
+  </div>
+</template>
+
+<template name="bigCounter">
+  <div class="big-count">
+    <big>{{counter}}</big>
+    <em>Fortunes publiées</em>
+  </div>
+</template>
+
+<template name="leaderboard">
+  <div class="leaderboard">
+    {{#each fortunes}}
+      {{> fortune}}
+    {{/each}}
+  </div>
+</template>
+
+<template name="fortune">
+    <div class="well span11">
+    <div class="span1 score">
+      <div class="score_number">{{score}}</div>
+    </div>
+    <div class="span7" >
+      <div class="date">
+        Fortuné le <span class="date">{{date}}</span>
+      </div>
+      <div class="content">
+        {{#fortuneHelper fortune}}
+        {{#if pseudo}}
+          <span class="pseudo {{pseudoClass}}">
+            {{pseudo}}
+          </span>
+        {{/if}}
+        <span class="message">{{message}}</span>
+        {{/fortuneHelper}}
+      </div>
+    </div>
+    <div class="span2">
+      <button class="down btn btn-down" data-id="{{_id}}">-1</button>
+      <button class="up btn btn-up" data-id="{{_id}}">+1</button>
+    </div>
+    </div>
+</template>

@@ -1,0 +1,97 @@
+/* CSS declarations go here */
+.fortune-form { margin-top: 20px;}
+#input-new { width: 400px; height: 100px; }
+
+.span7 { width: 580px; }
+
+.content { margin-top: 10px; }
+.content ul { list-style: none; }
+.content .pseudo { font-weight: bold; }
+.content .pseudo.odd { color: #E44803 }
+.content .pseudo.even { color: #00ADEE }
+
+#input-new { width: 570px; height: 140px; }
+
+.score { background: url(/score.png); width: 80px; height: 80px; text-align: center;}
+.score_number { font-size: 25px; font-weight: bold; color: #FFFFFF; margin-top: 25px; }
+
+.toolBox { margin-top: 20px; }
+.big-count { background: url(/score-big.png); width: 200px; height: 185px; text-align: center;}
+
+.big-count big {
+  margin-top: 60px;
+  color: #FFFFFF;
+  font-size: 60px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.big-count em  {
+  color: #FFFFFF;
+  display: block;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: bold;
+  margin: 18px 0 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Buttons */
+
+.btn{
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 1px 0 1px rgba(255, 255, 255, 0.4) inset;
+  color: #FFFFFF !important;
+  cursor: pointer;
+  display: inline-block;
+  font: 13px/13px 'DINBold',Arial,sans-serif;
+  padding: 5px 9px;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+  vertical-align: middle;
+  font-weight:bold;
+  font-size:15px;
+}
+
+.btn-add {
+  background: -moz-linear-gradient(center top , #CDEFFB 0%, #00ADEE 8%, #00ADEE 89%, #0572B6 100%) repeat scroll 0 0 transparent;
+  border: 1px solid #0569AF;
+  float: right;
+}
+
+.btn-up {
+  background: -moz-linear-gradient(center top , #CDEFFB 0%, #00ADEE 8%, #00ADEE 89%, #0572B6 100%) repeat scroll 0 0 transparent;
+  border: 1px solid #0569AF;
+  width:50px;
+  height:50px;
+}
+
+.btn-down {
+  background: -moz-linear-gradient(center top , #FADBBE 0%, #E44600 8%, #E44600 89%, #BC2C00 100%) repeat scroll 0 0 transparent;
+  border: 1px solid #AF3905;
+  width:50px;
+  height:50px;
+}
+
+.btn-add:hover, .btn-up:hover {
+  background: -moz-linear-gradient(center top , #CDEFFB 0%, #1DB3EE 8%, #62C0ED 51%, #00ADEE 53%, #00ADEE 89%, #0572B6 100%) repeat scroll 0 0 transparent !important;
+  text-decoration: none;
+}
+
+.btn-add:hover:active, .btn-up:active {
+  background: -moz-linear-gradient(center top , #0B8ABC 0%, #0FB3F0 13%, #4AB5D6 100%) repeat scroll 0 0 transparent !important;
+  box-shadow: none;
+}
+
+.btn-down:hover {
+  background: -moz-linear-gradient(center top , #FADBBE 0%, #E54A05 8%, #ED7641 51%, #E44600 53%, #EA6A30 89%, #C0420F 100%) repeat scroll 0 0 transparent !important;
+  text-decoration: none;
+}
+
+.btn-down:active {
+  background: -moz-linear-gradient(center top , #AF3905 0%, #E54902 13%, #FADBBE 100%) repeat scroll 0 0 transparent !important;
+  box-shadow: none;
+}
+
